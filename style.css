@@ -28,6 +28,17 @@ header h1 {
   color: #02b454;
   font-weight: lighter;
   margin-bottom: 1.5rem;
+  animation: h1-fadeIn 1s ease-in-out 1;
+}
+
+@keyframes h1-fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 header h2 {
@@ -37,6 +48,17 @@ header h2 {
   color: white;
   font-weight: lighter;
   letter-spacing: 0.5rem;
+  animation: h2-fadeIn 3s linear 1;
+}
+
+@keyframes h2-fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .vid-container-wrapper {
