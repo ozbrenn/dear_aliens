@@ -54,6 +54,8 @@ header h2 {
   overflow: hidden;
   padding-top: 56.25%;
   position: relative;
+  border-radius: 15px;
+  transition: all 0.2s ease-out;
 }
 
 .vid iframe {
@@ -65,16 +67,31 @@ header h2 {
   width: 100%;
 }
 
+.vid:hover {
+  box-shadow: 0 10px 0 0 #02b454, 0 0 50px 0 #02b45531;
+}
+
 .earth-container {
   width: 34%;
-  max-height: 60vh;
+  height: 100vh;
   overflow: hidden;
   position: sticky;
   top: 0px;
 }
 
 #earth {
-  transform: translateY(-30rem);
+  transform: translateY(10rem);
   position: absolute;
   z-index: -1;
+  animation: animation linear 25s infinite;
+}
+
+@keyframes animation {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
 }
