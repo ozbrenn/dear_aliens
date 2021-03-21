@@ -1,5 +1,7 @@
 # dear_aliens
 
+view here: https://ozbrenn.github.io/dear_aliens/
+
 ///
 Second attempt at making a simple page to showcase some YouTube vids.
 
